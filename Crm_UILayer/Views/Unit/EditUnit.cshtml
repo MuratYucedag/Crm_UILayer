@@ -1,0 +1,20 @@
+﻿@model EntityLayer.Concrete.Unit
+@{
+    ViewData["Title"] = "EditUnit";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<h1>Birim Güncelleme Sayfası</h1>
+
+<form method="post">
+    <label>ID</label>
+    <input type="text" asp-for="UnitID" class="form-control" />
+    <br />
+    <label>Birim Adı</label>
+    <input type="text" asp-for="UnitName" class="form-control" />
+    <br />
+    <label>Birim Açıklaması</label>
+    <input type="text" asp-for="UnitDescription" class="form-control" />
+    <br />
+    <button class="btn btn-primary">Birimi Güncelle</button>
+</form>
